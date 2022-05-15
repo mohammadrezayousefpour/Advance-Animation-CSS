@@ -2,23 +2,33 @@
   width: 100px;
   height: 100px;
   background-color: red;
-  animation: myFirst infinite 5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  animation: myFirst 1 1s ease;
+  animation-direction: reverse;
+  /* animation-fill-mode: both; */
 }
 @keyframes myFirst {
-  0% {
-    margin-left: 50px;
-    margin-top: 50px;
+  /* 0% {
+    transform: translateX(0px);
   }
-  30% {
-    margin-left: 500px;
-    margin-top: 500px;
+
+  25% {
+    transform: translateX(200px);
   }
-  60% {
-    margin-left: 1000px;
-    margin-top: 50px;
+  50% {
+    transform: translateX(400px);
+  }
+
+  75% {
+    transform: translateX(200px);
   }
   100% {
-    margin-left: 50px;
-    margin-top: 50px;
+    transform: translateX(0px);
+  } */
+
+  from {
+    transform: translateX(0px);
+  }
+  to {
+    transform: translateX(400px);
   }
 }

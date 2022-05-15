@@ -5,6 +5,7 @@ const Animation = () => {
   return (
     <div>
       <div className={classes.target}></div>
+      <div></div>
     </div>
   );
 };
