@@ -1,5 +1,6 @@
 import { useState } from "react";
 import classes from "./App.module.css";
+import Animation from "./components/animation/Animation";
 import PictureScale from "./components/PictureScale/PictureScale";
 function App() {
   const [pageNumber, setPageNumber] = useState(0);
@@ -51,7 +52,11 @@ function App() {
       </div>
     );
   } else if (pageNumber == 1) {
-    return <PictureScale />;
+    return (
+      <PictureScale pageNumber={pageNumber} setPageNumber={setPageNumber} />
+    );
+  } else if (pageNumber == 2) {
+    return <Animation />;
   }
 }
 

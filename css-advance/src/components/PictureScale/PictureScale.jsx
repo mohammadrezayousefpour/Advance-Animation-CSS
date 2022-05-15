@@ -4,7 +4,7 @@ import first from "../../images/1.jpg";
 import second from "../../images/2.jpeg";
 import third from "../../images/3.jpg";
 import forth from "../../images/4.jpg";
-const PictureScale = () => {
+const PictureScale = ({ pageNumber, setPageNumber }) => {
   return (
     <div className={classes.container}>
       <div className={classes.right}>
@@ -36,6 +36,17 @@ const PictureScale = () => {
           some other reason, like cancer for example, or a road accident. But I
           could not be certain about this.
         </p>
+        <button
+          style={{
+            width: "auto",
+            height: "auto",
+            padding: "5px 10px",
+            marginTop: "20px",
+          }}
+          onClick={() => setPageNumber(2)}
+        >
+          Click here for Next Page
+        </button>{" "}
       </div>
     </div>
   );
