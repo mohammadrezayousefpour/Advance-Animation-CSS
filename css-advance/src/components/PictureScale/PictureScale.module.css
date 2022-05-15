@@ -1,0 +1,36 @@
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  direction: rtl;
+}
+.right {
+  width: 50%;
+  height: 100vh;
+  background-color: aqua;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 10px;
+}
+.image {
+  width: 85%;
+  height: 300px;
+}
+.image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all 2s ease;
+}
+.image img:hover {
+  transform: scale(1.5);
+  box-shadow: 3px 3px 5px #000;
+  /* opacity: 0; */
+  /* transform: rotate(180deg) !important; */
+}
+.left {
+  width: 50%;
+  height: 100vh;
+  background-color: blueviolet;
+}
