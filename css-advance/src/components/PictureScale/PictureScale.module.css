@@ -34,3 +34,11 @@
   height: 100vh;
   background-color: blueviolet;
 }
+.left p {
+  font-size: 10px;
+  transition: font-size 0.5s ease;
+  text-align: justify;
+}
+.left p:hover {
+  font-size: 20px;
+}
