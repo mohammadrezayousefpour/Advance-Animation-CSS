@@ -14,7 +14,7 @@ function App() {
       <div className={classes.right}>
         <div className={classes.box}>
           <div className={classes.text}>
-            <h3>Available</h3>
+            <h3>SOLD</h3>
           </div>
         </div>
         <div className={classes.box}>
@@ -24,7 +24,7 @@ function App() {
         </div>
         <div className={classes.box}>
           <div className={classes.text}>
-            <h3>Available</h3>
+            <h3>SOLD</h3>
           </div>
         </div>
         <div className={classes.box}>
