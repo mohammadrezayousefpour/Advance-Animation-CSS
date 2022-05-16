@@ -21,14 +21,25 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transition: all 2s ease-in-out;
+  transform-origin: top left;
+  /* transition: all 2s ease-in-out; */
+  animation: rotate;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-delay: 2s;
 }
-.image img:hover {
+@keyframes rotate {
+  0% {
+    transform: rotateY(90deg);
+  }
+  100% {
+    transform: rotateY(0px);
+  }
+}
+/* .image img:hover {
   transform: rotateZ(720deg) scale(1.5);
   box-shadow: 3px 3px 5px #000;
-  /* opacity: 0; */
-  /* transform: rotate(180deg) !important; */
-}
+} */
 .left {
   width: 50%;
   height: 100vh;

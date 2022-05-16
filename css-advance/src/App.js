@@ -1,6 +1,7 @@
 import { useState } from "react";
 import classes from "./App.module.css";
 import Animation from "./components/animation/Animation";
+import NavBar from "./components/NavBAR/NavBar";
 import PictureScale from "./components/PictureScale/PictureScale";
 function App() {
   const [pageNumber, setPageNumber] = useState(2);
@@ -57,6 +58,8 @@ function App() {
     );
   } else if (pageNumber == 2) {
     return <Animation pageNumber={pageNumber} setPageNumber={setPageNumber} />;
+  } else if (pageNumber == 3) {
+    return <NavBar pageNumber={pageNumber} setPageNumber={setPageNumber} />;
   }
 }
 
