@@ -1,11 +1,18 @@
 import React from "react";
 import classes from "./Animation.module.css";
 
+import cloud from "../../images/GettyImages-1308797233.webp";
 const Animation = ({ pageNumber, setPageNumber }) => {
   return (
-    <div>
-      <div className={classes.target}></div>
-      <div></div>
+    <div className={classes.container}>
+      {/* <div className={classes.target}></div> */}
+      <div className={classes.cloud1}>
+        <img src={cloud}></img>
+      </div>
+      <div className={classes.cloud2}>
+        <img src={cloud}></img>
+      </div>
+
       <button
         style={{
           width: "auto",

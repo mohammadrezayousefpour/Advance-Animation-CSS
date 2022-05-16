@@ -3,7 +3,7 @@ import classes from "./App.module.css";
 import Animation from "./components/animation/Animation";
 import PictureScale from "./components/PictureScale/PictureScale";
 function App() {
-  const [pageNumber, setPageNumber] = useState(0);
+  const [pageNumber, setPageNumber] = useState(2);
   if (pageNumber == 0) {
     return (
       <div className={classes.container}>
