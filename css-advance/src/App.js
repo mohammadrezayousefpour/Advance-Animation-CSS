@@ -3,7 +3,7 @@ import classes from "./App.module.css";
 import Animation from "./components/animation/Animation";
 import PictureScale from "./components/PictureScale/PictureScale";
 function App() {
-  const [pageNumber, setPageNumber] = useState(2);
+  const [pageNumber, setPageNumber] = useState(0);
   if (pageNumber == 0) {
     return (
       <div className={classes.container}>
@@ -56,7 +56,7 @@ function App() {
       <PictureScale pageNumber={pageNumber} setPageNumber={setPageNumber} />
     );
   } else if (pageNumber == 2) {
-    return <Animation />;
+    return <Animation pageNumber={pageNumber} setPageNumber={setPageNumber} />;
   }
 }
 
