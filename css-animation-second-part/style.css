@@ -257,3 +257,45 @@ body {
 .sixth:hover {
   color: transparent;
 }
+
+/* //// */
+.menu {
+  display: flex;
+  justify-content: flex-start;
+  width: 70%;
+  padding: 10px 30px;
+}
+.menu div {
+  padding: 10px 30px;
+  position: relative;
+}
+.menu div span {
+  width: 25%;
+  height: 100%;
+  background-color: red;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  z-index: -1;
+  transform: scale(0) rotateY(90deg);
+  transform-origin: top;
+  transition: transform 0.3s;
+}
+.menu div:hover {
+  color: white;
+}
+.menu div:hover span {
+  transform: scale(1) rotateY(0deg);
+}
+.menu div span:nth-child(2) {
+  left: 25%;
+  transition-delay: 0.15s;
+}
+.menu div span:nth-child(3) {
+  left: 50%;
+  transition-delay: 0.3s;
+}
+.menu div span:nth-child(4) {
+  left: 75%;
+  transition-delay: 0.45s;
+}
