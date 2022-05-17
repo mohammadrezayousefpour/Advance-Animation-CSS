@@ -329,3 +329,50 @@ body {
 .btn:hover::before {
   height: 190%;
 }
+
+.btn2 {
+  margin-top: 150px;
+  padding: 20px 40px;
+  background: black;
+  position: relative;
+  border: none;
+  color: white;
+}
+.btn2::before {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: green;
+  top: 0;
+  left: 0;
+  content: "BUTTON";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  transform: rotateX(270deg);
+  transform-origin: top;
+  transition: all 0.5s;
+}
+.btn2::after {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: red;
+  top: 0;
+  left: 0;
+  content: "BUTTON";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  transform-origin: top;
+  transform: rotateX(270deg);
+  transition: all 0.5s;
+  transition-delay: 0.5s;
+}
+
+.btn2:hover::before,
+.btn2:hover::after {
+  transform: rotateX(0deg);
+}
