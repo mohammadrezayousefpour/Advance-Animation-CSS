@@ -31,7 +31,7 @@ body {
   align-items: center;
   width: 100vw;
   height: auto;
-  background-color: darkgoldenrod;
+  background-color: rgb(15, 52, 85);
   flex-direction: column;
 }
 
@@ -298,4 +298,34 @@ body {
 .menu div span:nth-child(4) {
   left: 75%;
   transition-delay: 0.45s;
+}
+
+.btn {
+  margin-top: 90px;
+  padding: 20px 40px;
+  background: none;
+  border: 1px solid tomato;
+  position: relative;
+  color: tomato;
+  overflow: hidden;
+  transition: color;
+}
+.btn:hover {
+  color: white;
+}
+.btn::before {
+  width: 100%;
+  height: 0;
+  background-color: tomato;
+  content: "";
+  position: absolute;
+  left: 0%;
+  bottom: 0%;
+  border-radius: 50% 50% 0% 0%;
+  transition: all 0.5s;
+  z-index: -1;
+}
+
+.btn:hover::before {
+  height: 190%;
 }
