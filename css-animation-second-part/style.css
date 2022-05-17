@@ -150,7 +150,7 @@ body {
   position: relative;
   transition: background-color 3s;
   overflow: hidden;
-  margin-bottom: 130px;
+  margin-bottom: 30px;
 }
 .forth:hover {
   background-color: #f44336;
@@ -180,7 +180,7 @@ body {
   font-size: 20px;
   border: 5px solid white;
   position: relative;
-  margin-bottom: 130px;
+  margin-bottom: 60px;
   transition: transform 1s;
   overflow: hidden;
 }
@@ -221,4 +221,39 @@ body {
 }
 .fifth:hover::after {
   transform: translate(0, 0);
+}
+
+/* ///// */
+.sixth {
+  text-decoration: none;
+  padding: 30px 60px;
+  border: 5px solid white;
+  color: white;
+  background-color: #f44336;
+  font-size: 20px;
+  margin-bottom: 50px;
+  position: relative;
+  overflow: hidden;
+}
+.sixth::before {
+  width: 100%;
+  height: 100%;
+  color: white;
+  content: "Thank You";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0%;
+  left: 0%;
+  position: absolute;
+  transform: scale(5);
+  opacity: 0;
+  transition: all 1s;
+}
+.sixth:hover::before {
+  transform: scale(1);
+  opacity: 1;
+}
+.sixth:hover {
+  color: transparent;
 }
