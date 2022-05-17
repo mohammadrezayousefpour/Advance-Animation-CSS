@@ -116,6 +116,7 @@ body {
   position: relative;
   /* transition: all 1s; */
   overflow: hidden;
+  margin-bottom: 50px;
 }
 
 .third::before {
@@ -136,4 +137,35 @@ body {
 .third:hover::before {
   transform: translateY(0);
   content: "Thank You";
+}
+
+/* ///// */
+
+.forth {
+  padding: 30px 60px;
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+  border: 5px solid white;
+  position: relative;
+  transition: background-color 3s;
+  overflow: hidden;
+}
+.forth:hover {
+  background-color: #f44336;
+}
+
+.forth::before {
+  width: 100%;
+  height: 50px;
+  background-color: white;
+  content: "";
+  top: 0;
+  left: 0;
+  position: absolute;
+  transition: all 1s;
+  transform: translateX(-100%) rotate(60deg);
+}
+.forth:hover::before {
+  transform: translateX(100%) rotate(60deg);
 }
