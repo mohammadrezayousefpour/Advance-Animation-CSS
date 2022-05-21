@@ -1,0 +1,30 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: aqua;
+}
+.container {
+  width: 500px;
+  height: 500px;
+  display: grid;
+  grid-template-columns: [col-1]1fr [col-2]1fr [col-3]1fr [col-4];
+  grid-template-rows: repeat(4, 1fr);
+  column-gap: 10px;
+  row-gap: 10px;
+  border: 5px solid red;
+}
+.item {
+  border: 2px solid blue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+.item-1 {
+  background-color: orange;
+  grid-column: col-1 / col-4;
+}
