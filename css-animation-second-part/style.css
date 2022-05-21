@@ -452,10 +452,12 @@ img {
   flex-direction: column;
   align-items: center;
   transition: all 0.5s;
+  transform: translateY(-100%);
 }
 .container:hover .caption {
   background-color: rgba(0, 0, 0, 0.5);
+  transform: translateY(0);
 }
 .container:hover img {
-  transform: scale(1.2);
+  transform: rotate(10deg) scale(1.2);
 }
