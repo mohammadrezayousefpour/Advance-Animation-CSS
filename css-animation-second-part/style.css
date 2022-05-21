@@ -331,12 +331,13 @@ body {
 }
 
 .btn2 {
-  margin-top: 150px;
+  margin-top: 50px;
   padding: 20px 40px;
   background: black;
   position: relative;
   border: none;
   color: white;
+  margin-bottom: 70px;
 }
 .btn2::before {
   position: absolute;
@@ -375,4 +376,49 @@ body {
 .btn2:hover::before,
 .btn2:hover::after {
   transform: rotateX(0deg);
+}
+
+.a1 {
+  width: 100px;
+  height: 50px;
+  color: white;
+  position: relative;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.a1::before {
+  width: 100%;
+  height: 100%;
+  background-color: aqua;
+  content: "";
+  top: 0px;
+  left: 0px;
+  opacity: 0;
+  position: absolute;
+  transition: all 0.3s;
+  transform-origin: top;
+}
+
+.a1::after {
+  width: 100%;
+  height: 100%;
+  background-color: chartreuse;
+  content: "";
+  position: absolute;
+  opacity: 0;
+  transition: all 0.3s;
+  top: 0px;
+  left: 0px;
+  transform-origin: bottom;
+}
+
+.a1:hover::before {
+  opacity: 1;
+  transform: rotateX(75deg);
+}
+.a1:hover::after {
+  opacity: 1;
+  transform: rotateX(-75deg);
 }
