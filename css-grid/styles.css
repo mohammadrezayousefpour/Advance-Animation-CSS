@@ -203,3 +203,31 @@ img {
   display: block;
   font-size: 5rem;
 }
+
+/* ==== menu ==== */
+
+#menu {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-rows: 20rem 1fr 10rem;
+}
+
+#menu .section-Heading {
+  grid-column: span 2;
+  justify-self: center;
+  align-self: center;
+}
+.menu__item {
+  display: grid;
+  grid-template-columns: 10rem 1fr min-content;
+  column-gap: 1.5rem;
+  align-items: center;
+}
+.menu__item:not(:last-child) {
+  margin-bottom: 2rem;
+}
+
+.menu__item-line {
+  width: 100%;
+  border-bottom: 2px dotted #cfcece;
+}
