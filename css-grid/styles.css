@@ -142,6 +142,8 @@ img {
 
 #about {
   background-color: lightblue;
+  display: grid;
+
   grid-template-columns: 25rem repeat(2, minmax(0, 1fr)) 25rem;
   grid-template-rows: 20rem 1fr 20rem;
   grid-template-areas:
@@ -149,13 +151,52 @@ img {
     ". content-left content-right ."
     "figures figures figures figures";
   width: 100%;
-  display: grid;
+  gap: 2rem;
 }
 .about__content-left {
   grid-area: content-left;
   font-size: 2.6rem;
   line-height: 3.9rem;
+  color: #232323;
 }
 .about__content-right {
   grid-area: content-right;
+  color: #8a8a8a;
+}
+.about__figures {
+  grid-area: figures;
+  display: grid;
+  grid-template-columns: repeat(3, 20rem);
+  justify-content: space-evenly;
+  text-align: center;
+}
+.about__figure-number {
+  font-size: 7rem;
+  line-height: 5.6rem;
+  font-weight: 300;
+}
+
+.about__figure-text {
+  margin-top: 2rem;
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
+#about .section-Heading {
+  grid-area: title;
+  text-align: center;
+}
+
+.section-heading__back {
+  display: block;
+  font-family: "Playfair Display", "serif";
+  opacity: 0.2;
+  font-weight: bold;
+  text-transform: capitalize;
+  line-height: 4rem;
+  font-size: 5rem;
+}
+.section-heading__front {
+  display: block;
+  font-size: 5rem;
 }
