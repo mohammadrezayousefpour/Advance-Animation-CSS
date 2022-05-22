@@ -137,3 +137,25 @@ img {
 .btn-lg {
   font-size: 2.6rem;
 }
+
+/*  about */
+
+#about {
+  background-color: lightblue;
+  grid-template-columns: 25rem repeat(2, minmax(0, 1fr)) 25rem;
+  grid-template-rows: 20rem 1fr 20rem;
+  grid-template-areas:
+    ". title title ."
+    ". content-left content-right ."
+    "figures figures figures figures";
+  width: 100%;
+  display: grid;
+}
+.about__content-left {
+  grid-area: content-left;
+  font-size: 2.6rem;
+  line-height: 3.9rem;
+}
+.about__content-right {
+  grid-area: content-right;
+}
