@@ -1,0 +1,42 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(15, 52, 85);
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container {
+  width: 80vw;
+  height: 400px;
+
+  display: flex;
+  border: 3px solid black;
+}
+.container div {
+  flex-basis: 0;
+  flex-grow: 1;
+  font-size: 2.6rem;
+  color: white;
+  font-weight: bold;
+  height: 200px;
+  text-align: center;
+}
+.first {
+  /* flex-grow: 2; */
+  background-color: red;
+}
+.second {
+  /* flex-grow: 1; */
+  /* flex-grow: 1; */
+  background-color: blue;
+}
+.third {
+  /* flex-grow: 2; */
+  background-color: black;
+}
+.forth {
+  /* flex-grow: 3; */
+  background-color: gray;
+}
