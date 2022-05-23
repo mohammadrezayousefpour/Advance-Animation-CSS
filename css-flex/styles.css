@@ -4,39 +4,46 @@ body {
   background-color: rgb(15, 52, 85);
   overflow: hidden;
   display: flex;
-  align-items: center;
+  flex-direction: column;
+}
+header {
+  width: 100%;
+  height: 40%;
+  background-color: darkslateblue;
+  display: flex;
   justify-content: center;
+  align-items: center;
+  font-size: 4rem;
+  /* background-color: black; */
+  color: white;
 }
 .container {
-  width: 80vw;
-  height: 400px;
-
-  display: flex;
-  border: 3px solid black;
+  margin: 0 auto;
+  width: 77vw;
+  height: 300px;
 }
-.container div {
-  flex-basis: 0;
-  flex-grow: 1;
-  font-size: 2.6rem;
+h3 {
   color: white;
-  font-weight: bold;
-  height: 200px;
-  text-align: center;
+  font-size: 3rem;
 }
-.first {
-  /* flex-grow: 2; */
-  background-color: red;
+
+.menu-item {
+  display: flex;
+  width: 100%;
+  /* background-color: red; */
+  height: 50px;
+  /* justify-content: spa; */
 }
-.second {
-  /* flex-grow: 1; */
-  /* flex-grow: 1; */
-  background-color: blue;
+.item {
+  flex-grow: 1;
+  display: flex;
+  background-color: #6a6a6a;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.5s linear;
+  font-family: "Times New Roman", Times, serif;
 }
-.third {
-  /* flex-grow: 2; */
-  background-color: black;
-}
-.forth {
-  /* flex-grow: 3; */
-  background-color: gray;
+.item:hover {
+  background-color: #9a9a9a;
 }
