@@ -1,5 +1,5 @@
 body {
-  width: 100vw;
+  width: 100%;
   height: auto;
   padding: 0%;
   margin: 0;
@@ -32,7 +32,7 @@ header span:last-child {
 .container {
   margin: 0;
   width: 100%;
-  height: 100vh;
+  height: auto;
   display: flex;
   flex-direction: column;
 }
@@ -55,4 +55,46 @@ header span:last-child {
 .item:hover {
   background-color: black;
   color: yellow;
+}
+.posts {
+  height: auto;
+  padding: 2rem;
+}
+.post {
+  background-color: white;
+  margin-bottom: 1rem;
+}
+.post-name {
+  padding: 20px;
+  font-size: 2rem;
+  font-weight: bold;
+  background-color: yellow;
+  color: black;
+  text-align: center;
+}
+.post-description {
+  padding: 0 40px 20px 30px;
+}
+.post img {
+  display: block;
+  margin: 0 auto;
+  width: 80%;
+  height: auto;
+}
+
+@media screen and (max-width: 810px) {
+  .posts {
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid red;
+    justify-content: space-between;
+  }
+  .post {
+    flex-basis: 49%;
+    border: 1px solid black;
+  }
+  .post img {
+    height: 500px;
+    object-fit: 100%;
+  }
 }
