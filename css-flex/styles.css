@@ -1,49 +1,58 @@
 body {
   width: 100vw;
-  height: 100vh;
-  background-color: rgb(15, 52, 85);
-  overflow: hidden;
+  height: auto;
+  padding: 0%;
+  margin: 0;
+  background-color: wheat;
+  overflow-x: hidden;
+  overflow-y: scroll;
   display: flex;
   flex-direction: column;
 }
 header {
   width: 100%;
-  height: 40%;
-  background-color: darkslateblue;
+  height: 40vh;
+  background-color: black;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 4rem;
+  flex-direction: column;
+
   /* background-color: black; */
   color: white;
 }
+header span:first-child {
+  font-size: 4rem;
+}
+header span:last-child {
+  color: yellow;
+  font-style: italic;
+  margin-top: 0.5vh;
+}
 .container {
-  margin: 0 auto;
-  width: 77vw;
-  height: 300px;
-}
-h3 {
-  color: white;
-  font-size: 3rem;
-}
-
-.menu-item {
-  display: flex;
+  margin: 0;
   width: 100%;
-  /* background-color: red; */
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.menu {
+  width: 100%;
   height: 50px;
-  /* justify-content: spa; */
+  background-color: yellow;
+  display: flex;
 }
 .item {
   flex-grow: 1;
-  display: flex;
-  background-color: #6a6a6a;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
   transition: all 0.5s linear;
-  font-family: "Times New Roman", Times, serif;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bolder;
+  cursor: pointer;
 }
 .item:hover {
-  background-color: #9a9a9a;
+  background-color: black;
+  color: yellow;
 }
